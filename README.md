@@ -2,7 +2,7 @@
 Smart contract for performing arbitrage between Uniswap and Sushiswap
 
 ## Features:
-The smart contract SimpleArbitrage alows the user to make an arbitrage between the 2 exchanges and ensures that the operation is always profitable
+The smart contract SimpleArbitrage alows a user to deposit ETH and make an arbitrage between the 2 exchanges and ensures that the operation is always profitable by checking that the price difference is always higher than the payed fees
 
 ## Usage:
 
@@ -40,4 +40,6 @@ To start an arbitrage you just need to run the commande :
    ```sh
    brownie run scripts/arbitrage.py
    ```
+### Testing:
 
+The tests for the smart contract can be found in the tests folder 
