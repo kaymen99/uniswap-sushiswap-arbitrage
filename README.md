@@ -21,3 +21,9 @@ Smart contract for performing arbitrage between Uniswap and Sushiswap
    git clone https://github.com/Aymen1001/uniswap-sushiswap-arbitrage.git
    cd uniswap-sushiswap-arbitrage
    ```
+
+4. Set your environment variables
+   To be able to deploy to real testnets you need to add your PRIVATE_KEY (You can find your PRIVATE_KEY from your ethereum wallet like metamask) to the .env file:
+   ```
+   PRIVATE_KEY=<PRIVATE_KEY>
+   ```
