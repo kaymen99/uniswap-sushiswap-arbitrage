@@ -18,6 +18,6 @@ Smart contract for performing arbitrage between Uniswap and Sushiswap
    
 3. Clone the repo:
    ```sh
-   git clone 
-   cd 
+   git clone https://github.com/Aymen1001/uniswap-sushiswap-arbitrage.git
+   cd uniswap-sushiswap-arbitrage
    ```
