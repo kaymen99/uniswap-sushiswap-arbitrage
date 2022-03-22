@@ -43,3 +43,12 @@ To start an arbitrage you just need to run the commande :
 ### Testing:
 
 The tests for the smart contract can be found in the tests folder 
+
+You can run all the tests by :
+   ```sh
+   brownie test
+   ```
+Or you can test each function individualy:
+   ```sh
+   brownie test -k <function name>
+   ```
