@@ -1,0 +1,39 @@
+{
+  "contracts": {
+    "SimpleArbitrage": "e9447b109a559da429c28ad3489950a89f3cfc51"
+  },
+  "tests": {
+    "tests/test_simple_arbitrage.py": {
+      "coverage": false,
+      "isolated": false,
+      "results": "....",
+      "sha1": "f97d17510d0bbde5cc6649031555fe978b5f7873",
+      "txhash": [
+        "c6c49afa91285042f79f2b3d8edbeb7cedc0bbe6"
+      ]
+    }
+  },
+  "tx": {
+    "c6c49afa91285042f79f2b3d8edbeb7cedc0bbe6": {
+      "SimpleArbitrage": {
+        "0": [
+          [
+            9,
+            10,
+            11,
+            14,
+            21
+          ],
+          [
+            27,
+            28
+          ],
+          [
+            25,
+            30
+          ]
+        ]
+      }
+    }
+  }
+}
