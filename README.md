@@ -1,7 +1,12 @@
 # uniswap-sushiswap-arbitrage
 Smart contract for performing arbitrage between Uniswap and Sushiswap
 
-## How to run:
+## Features:
+The smart contract SimpleArbitrage alows the user to make an arbitrage between the 2 exchanges and ensures that the operation is always profitable
+
+## Usage:
+
+### Installation & Setup:
 
 1. Installing Brownie: Brownie is a python framework for smart contracts development,testing and deployments. It's quit like [HardHat](https://hardhat.org) but it uses python for writing test and deployements scripts instead of javascript.
    Here is a simple way to install brownie.
@@ -29,3 +34,10 @@ Smart contract for performing arbitrage between Uniswap and Sushiswap
    PRIVATE_KEY=<PRIVATE_KEY>
    WEB3_INFURA_PROJECT_ID=<< YOUR INFURA PROJECT ID >>
    ```
+### How to run:
+
+To start an arbitrage you just need to run the commande :
+   ```sh
+   brownie run scripts/arbitrage.py
+   ```
+
