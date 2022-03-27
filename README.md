@@ -33,12 +33,21 @@ The smart contract SimpleArbitrage alows a user to deposit ETH and make an arbit
    ```
    PRIVATE_KEY=<PRIVATE_KEY>
    WEB3_INFURA_PROJECT_ID=<< YOUR INFURA PROJECT ID >>
+5. Add ethereum mainnet fork:
+
+   To add the forked ethereum blockchain to brownie you'll need an Alchemy account (it's free) and just create a new app on the ethereum network
+   
+   ![Capture d’écran 2022-01-25 à 00 14 44](https://user-images.githubusercontent.com/83681204/150881084-9b60349e-def0-44d2-bbb2-8ca7e27157c7.png)
+  
+   After creating the app copy the URL from -view key- and run this: 
+   ```sh
+   brownie networks add development mainnet-fork-dev cmd=ganache-cli host=http://127.0.0.1 fork=<Copied URL> accounts=10 mnemonic=brownie port=8545
    ```
 ### How to run:
 
-To start an arbitrage you just need to run the commande :
+To start an arbitrage on the mainnet fork you just need to run the command :
    ```sh
-   brownie run scripts/arbitrage.py
+   brownie run scripts/arbitrage.py --network=mainnet-fork-dev
    ```
 ### Testing:
 
