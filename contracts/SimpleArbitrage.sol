@@ -92,7 +92,7 @@ contract SimpleArbitrage {
         address routerAddress,
         address sell_token,
         address buy_token
-    ) public returns (uint256) {
+    ) internal returns (uint256) {
         IERC20(sell_token).approve(routerAddress, amountIn);
 
         uint256 amountOutMin = (_getPrice(
@@ -117,7 +117,7 @@ contract SimpleArbitrage {
         return amountOut;
     }
 
-    function _comparePrice(uint256 amount) public view returns (Exchange) {
+    function _comparePrice(uint256 amount) internal view returns (Exchange) {
         uint256 uniswapPrice = _getPrice(
             uniswapRouterAddress,
             wethAddress,
@@ -161,7 +161,7 @@ contract SimpleArbitrage {
         uint256 amountIn,
         uint256 higherPrice,
         uint256 lowerPrice
-    ) public pure returns (bool) {
+    ) internal pure returns (bool) {
         // uniswap & sushiswap have 0.3% fee for every exchange
         // so gain made must be greater than 2 * 0.3% * arbitrage_amount
 
@@ -182,7 +182,7 @@ contract SimpleArbitrage {
         address sell_token,
         address buy_token,
         uint256 amount
-    ) public view returns (uint256) {
+    ) internal view returns (uint256) {
         address[] memory pairs = new address[](2);
         pairs[0] = sell_token;
         pairs[1] = buy_token;
