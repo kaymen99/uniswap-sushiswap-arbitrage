@@ -11,10 +11,7 @@ dai_token = config["networks"][network.show_active()]["dai-token"]
 uni_router_address = config["networks"][network.show_active()]["uniswap-router"]
 sushi_router_address = config["networks"][network.show_active()]["sushiswap-router"]
 
-print(network.show_active())
-
-def deploy():
-
+def main():
     account = get_account()
 
     if network.show_active() in FORKED_BLOCHCHAINS:
@@ -39,7 +36,3 @@ def deploy():
 
     arbitrage_tx = arbitrage.makeArbitrage({"from": account})
     arbitrage_tx.wait(1)
-        
-
-def main():
-    deploy()
