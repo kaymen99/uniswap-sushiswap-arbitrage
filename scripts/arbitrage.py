@@ -36,3 +36,8 @@ def main():
 
     arbitrage_tx = arbitrage.makeArbitrage({"from": account})
     arbitrage_tx.wait(1)
+    
+    print("New amount: ", fromWei(arbitrage.arbitrageAmount()))
+    
+    
+    
