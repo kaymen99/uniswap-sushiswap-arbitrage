@@ -36,7 +36,7 @@ The smart contract SimpleArbitrage alows a user to deposit WETH and make an arbi
    ```
 ### How to run:
 
-To start an arbitrage on the mainnet fork you just need to run the command :
+To start an arbitrage on the mainnet fork (for testing purposes only, you can also use the kovan testnet) you just need to run the command :
    ```sh
    brownie run scripts/arbitrage.py --network=mainnet-fork
    ```
