@@ -20,7 +20,10 @@ The smart contract SimpleArbitrage alows a user to deposit WETH and make an arbi
     ```
     pip install eth-brownie
     ```
-   
+   Install [ganache-cli](https://www.npmjs.com/package/ganache-cli): 
+   ```sh
+    npm install -g ganache-cli
+    ```
 3. Clone the repo:
    ```sh
    git clone https://github.com/Aymen1001/uniswap-sushiswap-arbitrage.git
