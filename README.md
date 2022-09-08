@@ -26,7 +26,7 @@ The smart contract SimpleArbitrage alows a user to deposit WETH and make an arbi
     ```
 3. Clone the repo:
    ```sh
-   git clone https://github.com/Aymen1001/uniswap-sushiswap-arbitrage.git
+   git clone https://github.com/kaymen99/uniswap-sushiswap-arbitrage.git
    cd uniswap-sushiswap-arbitrage
    ```
 
